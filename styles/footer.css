@@ -1,0 +1,49 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#header {
+	background: #ededed;
+}
+
+#content {
+	padding-bottom: 200px;
+	/* Height of the footer element */
+}
+
+#footer {
+	background: white;
+	width: 100%;
+	min-height:  height: 200px;
+	position: absolute;
+	bottom: 0;
+	color: #c9c9c9;
+	font-family: germania-one;
+}
+
+#footNav{
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+	padding-top:50px;
+	color:black;
+	display:flex;
+	font-family: arial;
+	line-height: 1.5;
+}
+
+#footNav .columns{
+	width: 25%;
+}
+
+#footNav img{
+	max-width: 50%;
+}

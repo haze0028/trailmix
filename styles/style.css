@@ -1,0 +1,251 @@
+/******************************************
+    CSSS RESET + Footer Fix
+*******************************************/
+
+
+/*Linked to CSS reset and a footer fix to minimize the code*/
+
+@import url("cssReset.css");
+@import url("text.css");
+
+/********************************************
+    HEADER/FOOTER
+*********************************************/
+
+@import url("footer.css");
+
+#header {
+	background: rgba(42, 21, 0, 0.72);
+	padding-left: 100px;
+}
+
+/********************************************
+    CONTENT
+*********************************************/
+
+body {
+	background-image: url(../images/almond-21502_1920.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	font-family:arial; 
+}
+
+#boxes{
+	width:80%;
+	max-width: 1200px;
+	margin:100px auto;
+	display:flex;
+	
+}
+
+section {
+	background: rgba(255, 255, 255, 0.85);
+	padding: 20px;
+	width: 40%;
+	max-width: 500px;
+	box-shadow: 0px 10px 15px -4px #000000;
+	border-radius: 10px;
+}
+
+section .h6 {
+	text-align: right;
+	padding: 0 10px;
+}
+
+section:nth-child(2) {
+	margin-right:20%;
+}
+
+#info1{
+	width:100%;
+	background: transparent;
+	box-shadow: none;
+	display:none;
+}
+#info1 h3{	
+	text-shadow: 2px 2px 5px #0f0f0f;
+}
+
+#info2{
+	margin-left:-10%;
+	width:50%;
+	background: transparent;
+	box-shadow: none;
+}
+#info2 h3{	
+	text-shadow: 2px 2px 5px #0f0f0f;
+	padding-top: 200px;
+	
+}
+	
+#total{
+	display:none;
+}
+
+#shift {
+	animation: move 500ms 1;
+}
+
+#nutrition {
+	background: #ffffff;
+	padding: 10px;
+}
+
+#nutrition h3 {
+	font-weight: bold;
+}
+
+#nutrition h3,
+#nutrition p {
+	padding: 5px
+}
+
+#nutrition #nutBreak {
+	border: 2px solid black;
+}
+
+#nutrition hr {
+	width: 96%;
+}
+
+.facts {
+	float: left;
+	width: 200px;
+	font-weight: bold;
+}
+
+#sugar {
+	font-weight: normal;
+	text-indent: 40px;
+}
+
+#footnote{
+	font-size:14px ;
+}
+
+#newItems{
+	width:30%;
+	max-width: 1200px;
+	margin: 0 auto 100px;
+	background: rgba(255, 128, 0, 0.85);
+	padding:20px 20px 100px;
+	box-shadow: 0px 10px 15px -4px #000000;
+	border-radius: 10px;	
+	position: relative;
+}
+
+#newItems h3{
+	color: white;
+}
+
+#newItems .buttons{
+	width:100px;
+	position: absolute;
+	right:50px;
+	bottom:20px
+}
+
+#notes{
+	width:80%;
+	max-width: 1200px;
+	margin: 0 auto 100px;
+	background: rgba(59, 59, 59, 0.85);
+	padding:20px;
+	box-shadow: 0px 10px 15px -4px #000000;
+	border-radius: 10px;	
+	color:white;
+}
+
+#notes h3{
+	color:rgb(255, 226, 0)
+}
+#notes ul{
+	list-style-type: circle;
+	padding-left:50px;	
+}
+
+/********************************************
+    Animations
+*********************************************/
+@keyframes move{
+	0%{
+		transform:translateX(100px);
+		opacity: 0;
+		display:none;
+	}
+	100%{
+		transform:translateX(0);
+		opacity: 1;
+		display:block;
+	}
+}
+
+
+/********************************************
+    Media Queries
+*********************************************/
+
+@media screen and (max-width:960px) {
+	#boxes, #notes, #footNav{
+		width:90%;
+	}
+	
+	section{
+		width:47%;
+	}
+	
+	section:nth-child(2) {
+	margin-right:6%;
+	}
+	
+	#info2{
+		margin-left:auto;		
+	}
+	
+	h2, .h2{
+		font-size:40px;
+	}
+	
+	h3, .h3{
+		font-size:30px;
+	}
+	
+	label, input{
+		font-size: 16px;
+		
+	}
+}
+
+@media screen and (max-width:600px) {
+	#boxes, #notes{		
+		margin-top:0;
+		flex-flow: column;
+	}
+	
+	#info1{
+		display:block;
+	}
+	
+	#info1 h3{
+		font-size:28px;
+		padding:0;	
+	}
+	
+	#info2{
+		display:none;
+	}
+	
+	section{
+		width:100%;
+		max-width: none;
+	}
+	
+	section:nth-child(2) {
+	margin-right:0;
+	margin-bottom:50px;
+	}
+	
+	#footNav img{
+	max-width: 100%;
+}
+}

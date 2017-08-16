@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Custom Trail Mix Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--BOOTSTRAP-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!--CUSTOM CSS-->
+	<link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="content">
+
+			<div id="boxes">
+				<section id="info1">
+					<h3>Enter the <u>total</u> amount of each ingredient into this calculator to find out the nutritional info of you customized mix!</h3>
+				</section>
+
+				<section id="mix">
+					<h2>Customize Your Trail Mix</h2>
+					<hr>
+					<h3 class="h6">Amount in grams</h3>
+					<form action="" id="nutForm">
+						<label for="peanutDrop" class="labels">Peanuts</label>
+						<input type="number" name="peanut" value="0" id="peanutInput" class="nutInput">
+
+						<label for="walnutDrop" class="labels">Walnuts</label>
+						<input type="number" name="walnut" value="0" id="walnutInput" class="nutInput">
+
+						<label for="pumpkinDrop" class="labels">Pumpkin Seeds</label>
+						<input type="number" name="pumpkin" value="0" id="pumpkinInput" class="nutInput">
+
+						<label for="sunflowerDrop" class="labels">Sunflower Seeds</label>
+						<input type="number" name="sunflower" value="0" id="sunflowerInput" class="nutInput">
+
+						<label for="reeseDrop" class="labels">Reeses Pieces</label>
+						<input type="number" name="reese" value="0" id="reeseInput" class="nutInput">
+
+						<label for="almondDrop" class="labels">Almonds</label>
+						<input type="number" name="almonds" value="0" id="almondInput" class="nutInput">
+
+						<label for="cashewDrop" class="labels">Cashews</label>
+						<input type="number" name="cashew" value="0" id="cashewInput" class="nutInput">
+
+						<label for="raisinDrop" class="labels">Thompson Raisins</label>
+						<input type="number" name="raisin" value="0" id="raisinInput" class="nutInput">
+
+						<p id="errorMsg">Please add some ingredients to your mix</p>
+
+						<button class="buttons" id="doMath" type="button">Calculate</button>
+
+						<button type="reset" class="buttons" id="resetForm" onclick="resetForm">Reset</button>
+					</form>
+				</section>
+
+				<section id="info2">
+					<h3>Enter the <u>total</u> amount of each ingredient into this calculator to find out the nutritional info of you customized mix!</h3>
+				</section>
+
+				<section id="total">
+					<h2>Your mix</h2>
+					<hr>
+					<div id="nutrition">
+						<h3 class="h5">Nutrition Facts*</h3>
+						<p>Serving size 100g (2/3 cup)</p>
+						<hr id="nutBreak">
+						<p class="facts">Calories</p>
+						<p id="calFacts">100g</p>
+						<hr>
+						<p class="facts">Fat</p>
+						<p id="fatFacts">100g</p>
+						<hr>
+						<p class="facts" id="carbs">Carbohydrate</p>
+						<p id="carbFacts">100g</p>
+						<hr>
+						<p class="facts" id="sugar">Sugar</p>
+						<p id="sugFacts">100g</p>
+						<hr>
+						<p class="facts" id="protein">Protein</p>
+						<p id="protFacts">100g</p>
+					</div>
+					<p id="footnote">*Nutrition information may vary based on the dispersion of ingredients</p>
+				</section>
+			</div>
+
+<!--
+			<div id="newItems">
+				<h3>Add a new ingredient</h3>
+				<form action="post" id="itemForm">
+					<label for="itemName" class="labels">Item Name</label>
+					<input type="text" name="nameInput" placeholder="Name" id="nameInput" class="nutInput">
+
+					<label for="calorieInput" class="labels">Calories</label>
+					<input type="number" name="calorieInput" value="0" id="calorieInput" class="nutInput">
+
+					<label for="fatInput" class="labels">Fat</label>
+					<input type="number" name="fatInput" value="0" id="fatInput" class="nutInput">
+
+					<label for="carbInput" class="labels">Carbohydrates</label>
+					<input type="number" name="carbInput" value="0" id="carbInput" class="nutInput">
+
+					<label for="sugarInput" class="labels">Sugar</label>
+					<input type="number" name="sugarInput" value="0" id="sugarInput" class="nutInput">
+
+					<label for="proteinInput" class="labels">Protein</label>
+					<input type="number" name="proteinInput" value="0" id="proteinInput" class="nutInput">
+
+					<button class="buttons" id="itemSubmit" type="button">Submit</button>
+				</form>
+			</div>
+-->
+
+			<div id="notes">
+				<h3>Upcoming features</h3>
+				<ul>
+					<li>Add your own ingredients and nutrition facts</li>
+					<li>Choose a different serving size</li>
+					<li>New measurement units (ounces, lbs, etc.)</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footNav">
+				<div class="columns">
+					<img src="https://www.trulygoodfoods.com/wp-content/uploads/2016/08/TF_TrailMix_Bowl-9954.png">
+				</div>
+				<div class="columns">
+				</div>
+				<div class="columns">
+					<ul>
+						<li class="h6">Contact</li>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Gmail</li>
+					</ul>
+				</div>
+				<div class="columns">
+					<ul>
+						<li class="h6">More info</li>
+						<li>Copyright</li>
+						<li>Terms &amp; Conditions</li>
+						<li>Nutrition Cards</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--BOOTSTRAP-->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!--SCRIPTS-->
+	<script src="scripts/script.js"></script>
+
+	<!--FONTS-->
+	<script src="http://use.edgefonts.net/chicle:n4:all.js"></script>
+</body>
+
+</html>

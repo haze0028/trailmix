@@ -1,0 +1,79 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:10px;
+    font-family: "trebuchet ms";
+    color: #ffffff;
+}
+
+h1, .h1{
+    font-size: 60px;
+}
+
+h2, .h2{
+    font-size: 50px;
+    color:#714126;
+}
+
+h3, .h3 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h4, .h4 {
+    font-size: 30px;
+}
+
+h5, .h5 {
+    font-size: 25px;
+}
+
+h6, .h6 {
+    font-size: 20px;
+	font-weight: bold;
+}
+
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:10px;
+    font-size: 18px;
+    font-family: "trebuchet ms";
+}
+
+input:focus{
+	box-shadow:0 0 10px 2px #ffffff;
+}
+
+label, input, select, .buttons{
+    margin: 0 1% 15px;
+    padding: 3px;
+    font-size:26px;
+    font-family: chicle;
+    width: 46%;
+}
+
+select, input{
+    font-family: arial;
+}
+
+ul, ol{
+	padding-bottom:30px;
+}
+
+#errorMsg{
+	color:red;
+	opacity: 0;
+}
+
+.buttons{
+    border-radius: 5px;
+	border:1px solid #bababa;
+	box-shadow: 0px 5px 10px -4px black;
+}
