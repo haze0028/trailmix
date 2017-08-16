@@ -1,6 +1,6 @@
 document.getElementById("doMath").addEventListener("click", calculate);
 document.getElementById("resetForm").addEventListener("click", resetForm);
-document.getElementById("itemSubmit").addEventListener("click", itemSubmit);
+//document.getElementById("itemSubmit").addEventListener("click", itemSubmit);
 
 var peanuts = {
 	calorie: 566.67,
@@ -182,7 +182,7 @@ function resetForm() {
 }
 
 /* create a new item and add to html and js */
-function itemSubmit(){
+/*function itemSubmit(){
 	
 	var name = document.getElementById("nameInput").value;
 	var cal = document.getElementById("calorieInput").value;
@@ -203,14 +203,7 @@ function itemSubmit(){
 	document.getElementById("nutForm").createElement('label[class="labels"]');
 	document.getElementById("nutForm").createElement('input[type="number"]');
 	
-}
-
-/* toFixed used to round to set number of decimal places 
-function round(things) {
-	var rounded = things.toFixed(2);
-	return rounded;
 }*/
-
 
 /* determines how many input fields have values greater than 0
 var allInputs = document.querySelectorAll('input[type="number"]');
